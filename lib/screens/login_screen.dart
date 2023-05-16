@@ -18,7 +18,6 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
 
-  LoginModel? loginModel;
   var formKey = GlobalKey<FormState>();
   var emailController = TextEditingController();
   var passController = TextEditingController();

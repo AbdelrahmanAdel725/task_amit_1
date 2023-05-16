@@ -72,10 +72,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children:
                     [
-                      Text('Already have an account?',style: TextStyle(fontSize: 20),),
+                      Text('Don\'t have an account?',style: TextStyle(fontSize: 20),),
                       TextButton(onPressed: (){
-                        Navigator.pop(context);
-                      }, child: Text('Login',style: TextStyle(fontSize: 20),)),
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> RegisterScreen()));
+                      }, child: Text('Register',style: TextStyle(fontSize: 20),)),
                     ],
                   ),
                 ],
